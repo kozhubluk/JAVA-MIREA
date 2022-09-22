@@ -1,8 +1,9 @@
 package FirstWeek;
 
+import java.util.Arrays;
 import java.util.Random;
 
-public class SortArray {
+public class RandomArray {
     public static void main(String[] args) {
         int [] array1 = new int[10];
         int [] array2 = new int[10];
@@ -11,8 +12,8 @@ public class SortArray {
             array1[i] = (int)(Math.random()*30);
             array2[i] = random.nextInt(30);
         }
-        System.out.println("1ый массив " + array1);
-        System.out.println("2ой массив " + array2);
+        System.out.println("1ый массив " + Arrays.toString(array1));
+        System.out.println("2ой массив " + Arrays.toString(array2));
 
     }
 }
