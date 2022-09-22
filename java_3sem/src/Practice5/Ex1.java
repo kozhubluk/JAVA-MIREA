@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class Ex1 {
     public static void main(String[] args) {
-        int first, second;
+        int first, second; // счет 1ой и 2ой команд
         JFrame frame = new JFrame("GAME");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(240, 240);
@@ -14,7 +14,7 @@ public class Ex1 {
         panel.add(firstButton);
         panel.add(secondButton);
         frame.getContentPane().add(panel);
-        //frame.pack();
+        frame.pack();
         frame.setVisible(true);
     }
 
