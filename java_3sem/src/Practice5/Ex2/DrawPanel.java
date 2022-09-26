@@ -7,6 +7,7 @@ import java.util.Random;
 
 public class DrawPanel extends JPanel {
     ArrayList<Shape> shapes = new ArrayList<Shape>();
+    @Override
     public void paint(Graphics g) {
         super.paint(g);
         setDoubleBuffered(true);
