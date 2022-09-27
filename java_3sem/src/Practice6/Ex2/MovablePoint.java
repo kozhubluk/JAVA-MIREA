@@ -1,8 +1,10 @@
-package Practice6.Ex1;
+package Practice6.Ex2;
 
-public class MovablePoint implements Movable{
-    private int  x, y;
-    private int xSpeed, ySpeed;
+import Practice6.Ex1.Movable;
+
+public class MovablePoint implements Movable {
+    private int x, y;
+    protected int xSpeed, ySpeed;
     public MovablePoint(int x, int y, int xSpeed, int ySpeed) {
         this.x = x;
         this.y = y;
