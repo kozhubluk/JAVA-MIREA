@@ -9,7 +9,7 @@ public class TestPrint {
         Scanner sc = new Scanner(System.in);
         Book b = new Book(sc.nextLine(), sc.nextLine());
         System.out.println("Введите название журнала: ");
-        Shop s = new Shop(sc.nextLine());
+        Magazine s = new Magazine(sc.nextLine());
 
         ArrayList<Printable> arr = new ArrayList<>();
         arr.add(s);

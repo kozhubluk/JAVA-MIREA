@@ -1,9 +1,9 @@
 package Practice6.Print;
 
-public class Shop implements Printable {
+public class Magazine implements Printable {
     private String name;
 
-    public Shop(String name) {
+    public Magazine(String name) {
         this.name = name;
     }
 

@@ -8,9 +8,9 @@ public class Test {
         System.out.printf("Введите темп-ру в градусах Цельсия ");
         Scanner sc = new Scanner(System.in);
         t = sc.nextDouble();
-        Fahrenheit f = new Fahrenheit(t);
-        Kelvin k = new Kelvin(t);
-        System.out.printf("в Фаренгейтах: %.2f\n", f.convert());
-        System.out.printf("В Кельвинах: %.2f", k.convert());
+        Fahrenheit f = new Fahrenheit();
+        Kelvin k = new Kelvin();
+        System.out.printf("в Фаренгейтах: %.2f\n", f.convert(t));
+        System.out.printf("В Кельвинах: %.2f", k.convert(t));
     }
 }
