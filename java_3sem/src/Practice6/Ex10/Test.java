@@ -37,29 +37,28 @@ public class Test {
         Computer c;
         Scanner sc = new Scanner(System.in);
         command = sc.next();
-        while (command != "выйти") {
+        while (true) {
             switch (command) {
                 case "добавить":
                     s.addComputer(enter());
-                    command = sc.next();
                     break;
                 case "удалить":
                     System.out.println("Введите номер ");
                     s.deleteComputer(sc.nextInt());
-                    command = sc.next();
                     break;
                 case "найти":
                     System.out.println("Введите номер: ");
                     System.out.println(s.findComputer(sc.nextInt()));
-                    command = sc.next();
                     break;
                 case "показать":
                     System.out.println(s);
-                    command = sc.next();
+                    break;
+                case "выйти":
+                    return;
                 default:
                     System.out.println("неизвестная команда");
-                    command = sc.next();
             }
+            command = sc.next();
         }
     }
 }
