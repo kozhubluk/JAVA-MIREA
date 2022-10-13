@@ -11,7 +11,7 @@ public class SortingStudentsByGPA implements Comparator<Student>
         return s1.getScore() - s2.getScore();
         }
 
-        public void Sort(Student[] s, int low, int high)
+        public void Sort(Student[] s, int low, int high) // БЫСТРАЯ СОРТИРОВКА
         {
             if (s.length == 0) return; //завершить выполнение, если длина массива равна 0
 
