@@ -7,14 +7,14 @@ public class StringFunc implements StringProcess{
     }
 
     @Override
-    public String revers(String str) {
+    public String revers(String str) { // переворачивает строку
         String rev = "";
         for (int i = 0; i < str.length(); i++) rev = str.charAt(i) + rev;
         return rev;
     }
 
     @Override
-    public String oddString(String str) {
+    public String oddString(String str) { // состоавляет новую строку из символов на четных позициях
         String res = "";
         for (int i = 0; i < str.length(); i++) if (i % 2 != 0) res += str.charAt(i);
         return res;
