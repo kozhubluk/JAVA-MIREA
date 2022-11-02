@@ -32,7 +32,7 @@ public class Ex2 extends JFrame {
         //jComboBox1.getSelectedItem()
         button.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ae) {
-                  String item = (String)Country.getSelectedItem();
+                String item = (String)Country.getSelectedItem();
                 switch (item) {
                     case "Австралия":
                         JOptionPane.showMessageDialog(null, itemsDescription[0], "Alert", JOptionPane.INFORMATION_MESSAGE);
