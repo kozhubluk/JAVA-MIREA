@@ -2,11 +2,11 @@ package Practice23;
 
 public interface Queue {
 
-    void enqueue(Object element);
+    void enqueue(int element);
 
-    Object dequeue();
+    int dequeue();
 
-    Object element();
+    int element();
 
     int size();
 
