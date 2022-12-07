@@ -47,8 +47,9 @@ public class Ex1 {
         objectOutputStream.writeObject(tm);
 
         //закрываем поток и освобождаем ресурсы
-        System.out.println("Интеренет заказ");
+
         objectOutputStream.close();
+        System.out.println("Интеренет заказ");
         FileInputStream fileInputStream = new FileInputStream("save.ser");
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
         InternetOrdersManager internet = (InternetOrdersManager) objectInputStream.readObject();
