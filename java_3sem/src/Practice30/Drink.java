@@ -1,6 +1,8 @@
 package Practice30;
 
-public class Drink extends MenuItem implements Alcoholable{
+import java.io.Serializable;
+
+public class Drink extends MenuItem implements Alcoholable, Serializable {
     private double alcoholVol;
     private DrinkTypeEnum type;
 

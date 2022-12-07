@@ -1,9 +1,10 @@
 package Practice30;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class InternetOrder implements Order{
+public class InternetOrder implements Order, Serializable {
     private int size = 0;
     private ListNode head;
     private ListNode tail;

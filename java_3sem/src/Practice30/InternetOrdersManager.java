@@ -1,6 +1,8 @@
 package Practice30;
 
-public class InternetOrdersManager implements OrdersManager{
+import java.io.Serializable;
+
+public class InternetOrdersManager implements OrdersManager, Serializable {
     private QueueNode head = null;
     private QueueNode tail = null;
     private int size = 0;

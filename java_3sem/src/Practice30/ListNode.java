@@ -1,6 +1,8 @@
 package Practice30;
 
-public class ListNode {
+import java.io.Serializable;
+
+public class ListNode implements Serializable {
     protected ListNode next;
     protected MenuItem value;
 }

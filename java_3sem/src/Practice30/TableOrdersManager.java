@@ -1,13 +1,14 @@
 package Practice30;
 
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class TableOrdersManager implements OrdersManager{
-    private Order[] orders;
+public class TableOrdersManager implements OrdersManager, Serializable {
+    private TableOrder[] orders;
 
     public TableOrdersManager() {
-        orders = new Order[10];
+        orders = new TableOrder[10];
     }
 
     @Override
@@ -31,7 +32,7 @@ public class TableOrdersManager implements OrdersManager{
     }
 
     @Override
-    public Order[] getOrders() {
+    public TableOrder[] getOrders() {
         return orders;
     }
 
@@ -53,7 +54,7 @@ public class TableOrdersManager implements OrdersManager{
         return count;
     }
 
-    public boolean add(Order order, int tableNumber) {
+    public boolean add(TableOrder order, int tableNumber) {
         if (orders[tableNumber] != null) {
             return false;
         }

@@ -1,6 +1,8 @@
 package Practice30;
 
-public class QueueNode {
+import java.io.Serializable;
+
+public class QueueNode implements Serializable {
     protected QueueNode next;
     protected QueueNode prev;
     protected Order value;

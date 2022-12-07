@@ -1,9 +1,10 @@
 package Practice30;
 
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class MenuItem {
+public class MenuItem implements Serializable {
     private int cost;
     private String name;
     private String description ;

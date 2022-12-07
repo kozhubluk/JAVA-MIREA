@@ -1,11 +1,12 @@
 package Practice30;
 
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class TableOrder implements Order{
+public class TableOrder implements Order, Serializable {
     private int size;
     private MenuItem[] items;
     private Customer customer;

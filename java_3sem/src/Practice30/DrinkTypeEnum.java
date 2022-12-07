@@ -1,6 +1,8 @@
 package Practice30;
 
-public enum DrinkTypeEnum {
+import java.io.Serializable;
+
+public enum DrinkTypeEnum implements Serializable{
     BEER,
     WINE,
     VODKA,

@@ -1,6 +1,8 @@
 package Practice30;
 
-public class Customer {
+import java.io.Serializable;
+
+public class Customer implements Serializable {
     private String firstName;
     private String secondName;
     private int age;
