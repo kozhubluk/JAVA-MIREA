@@ -4,7 +4,6 @@ import Practice30.*;
 
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
-import java.util.Arrays;
 import java.io.IOException;
 import java.io.*;
 
@@ -37,7 +36,7 @@ public class Ex1 {
         InternetOrder io = new InternetOrder();
         io.add(drink3);
         io.add(dish1);
-        im.add(io);
+        im.addOrder(io);
         // создаем два потока
         // один из них записывает в файл
         // другой преобразует объекты в байты

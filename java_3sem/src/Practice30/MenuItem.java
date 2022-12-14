@@ -37,8 +37,14 @@ public class MenuItem implements Serializable {
         return cost == item.cost && name.equals(item.name) && description.equals(item.description);
     }
 
+    public String getInfo(){
+        return name + ", " + description;
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(cost, name, description);
     }
+
+
 }

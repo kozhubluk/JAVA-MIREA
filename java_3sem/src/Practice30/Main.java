@@ -39,7 +39,7 @@ public class Main {
         InternetOrder io = new InternetOrder();
         io.add(drink3);
         io.add(dish1);
-        im.add(io);
+        im.addOrder(io);
         System.out.println("\nИнтерент заказ");
         im.print();
 

@@ -43,6 +43,7 @@ public class Ex2 {
         int count = 0;
         for(Map.Entry<String, ArrayList<String>> item : map.entrySet()){
             for (String name : item.getValue()) {
+
                 if (name.equals(value))
                     count++;
             }

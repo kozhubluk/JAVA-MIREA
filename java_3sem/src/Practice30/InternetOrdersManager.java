@@ -58,7 +58,7 @@ public class InternetOrdersManager implements OrdersManager, Serializable {
         return size;
     }
 
-    public boolean add(Order order) {
+    public boolean addOrder(Order order) {
         if(head == null) {
             QueueNode node = new QueueNode();
             node.value = order;

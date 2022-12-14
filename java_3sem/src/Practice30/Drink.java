@@ -23,4 +23,6 @@ public class Drink extends MenuItem implements Alcoholable, Serializable {
     public double getAlcoholVol() {
         return alcoholVol;
     }
+
+
 }
